@@ -324,3 +324,6 @@ p{margin:0 0 1em}
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 .sent{padding:28px;border:1px solid var(--line);border-radius:var(--r);background:#fff}
 .sent h3{margin:0 0 8px}
+.req{color:var(--red)}
+.form .hint{margin:-6px 0 0;font-size:.86rem;color:#6c6d70}
+.form .hint.err{color:var(--red);font-weight:600}
