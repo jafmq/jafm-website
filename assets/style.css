@@ -395,3 +395,25 @@ p{margin:0 0 1em}
 .faq summary::after{content:"+";position:absolute;right:6px;top:10px;font-size:1.4rem;color:#c8102e;font-weight:500}
 .faq details[open] summary::after{content:"–"}
 .faq details p{margin:0 0 14px;line-height:1.6}
+/* language switch + Arabic (RTL) */
+.lang{font-weight:600;text-decoration:none;opacity:.85}
+[dir=rtl] body,[dir=rtl] input,[dir=rtl] select,[dir=rtl] textarea,[dir=rtl] button{font-family:"IBM Plex Sans Arabic","Plus Jakarta Sans",system-ui,sans-serif}
+[dir=rtl] body{line-height:1.75}
+[dir=rtl] .lang{font-family:"Plus Jakarta Sans",system-ui,sans-serif}
+[dir=rtl] .since{border-left:0;padding-left:0;border-right:1px solid var(--line);padding-right:12px}
+[dir=rtl] .f1{left:auto;right:-2%}[dir=rtl] .f2{right:auto;left:0}
+[dir=rtl] .tile:hover .more .ic,[dir=rtl] .sec:hover .go{transform:translateX(-4px)}
+[dir=rtl] svg[data-i=arrow]{scale:-1 1}
+[dir=rtl] .quote::before,[dir=rtl] .tcard::before{left:auto;right:28px;content:"”"}
+[dir=rtl] .cta-in::after{right:auto;left:-80px}
+[dir=rtl] .stats-row div{border-left:1px solid var(--line);border-right:4px solid var(--red)}
+[dir=rtl] .wa-float{right:auto;left:20px}
+[dir=rtl] .tall{margin-left:0;margin-right:auto}
+[dir=rtl] .ctrack,[dir=rtl] .cstrip{direction:ltr}
+[dir=rtl] .steps-list{padding-left:0;padding-right:1.3em}
+[dir=rtl] .tbl th,[dir=rtl] .tbl td{text-align:right}
+[dir=rtl] .faq summary{padding:14px 0 14px 32px}
+[dir=rtl] .faq summary::after{right:auto;left:6px}
+@media (max-width:820px){[dir=rtl] .burger{margin-right:0;margin-left:-12px}}
+[dir=rtl] .skip{left:auto;right:-999px}[dir=rtl] .skip:focus{right:10px}
+[dir=rtl] .hp{left:auto!important;right:-9999px}
