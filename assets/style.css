@@ -291,7 +291,7 @@ p{margin:0 0 1em}
 .bname{display:flex;flex-direction:column;line-height:1.15}
 .bname b{font-size:1.12rem;font-weight:800;color:var(--logo-grey);letter-spacing:-.01em}
 .bname span{font-size:.8rem;font-weight:600;color:var(--red)}
-.flogo{display:block;width:166px;height:auto;margin-bottom:16px}
+.flogo{display:block;width:64px;height:auto;margin-bottom:16px}
 .tico,.card .ic.big{background:#fbe9eb}
 .hero{background:radial-gradient(1000px 520px at 78% 28%,#fdeef0 0%,#fff 60%)}
 .tile-lg,.box.dark,.cta-in{background:linear-gradient(160deg,#be1d2c 0%,#931422 100%)}
