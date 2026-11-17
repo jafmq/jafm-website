@@ -422,3 +422,10 @@ p{margin:0 0 1em}
 .cta{padding:clamp(48px,6vw,80px) 0}
 .cta-in{top:0}
 .foot{padding-top:clamp(48px,6vw,72px)}
+/* accessibility fixes (PageSpeed) */
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;margin:-1px;padding:0;border:0}
+/* dots were too small to tap; arrows remain */
+.tdots{display:none}
+.tnav .tnext{margin-right:auto}
+[dir=rtl] .tnav .tnext{margin-right:0;margin-left:auto}
+.crumbs,.crumbs a{color:#565d64}
