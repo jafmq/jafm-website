@@ -502,3 +502,8 @@ p{margin:0 0 1em}
 .gmore{margin-top:auto;padding-top:6px;font-weight:700;font-size:.9rem;color:var(--red);display:inline-flex;align-items:center;gap:6px;text-decoration:none}
 .gmore .ic{width:16px;height:16px}
 [dir=rtl] .gmore .ic{transform:scaleX(-1)}
+
+/* Home hero: keyword line is the page H1; the big headline keeps its look (22 Nov 2026) */
+.hero .hero-kw{font-size:1.05rem;line-height:1.35;font-weight:700;letter-spacing:0;color:var(--red);margin:1em 0 .45em;max-width:none}
+.hero .hero-title{font-size:clamp(2.3rem,5vw,3.7rem);line-height:1.1;margin:0 0 .55em;letter-spacing:-.025em;text-wrap:balance;font-weight:800;color:var(--ink)}
+.hero .hero-title em{font-style:normal;color:var(--red)}
