@@ -507,3 +507,37 @@ p{margin:0 0 1em}
 .hero .hero-kw{font-size:1.05rem;line-height:1.35;font-weight:700;letter-spacing:0;color:var(--red);margin:1em 0 .45em;max-width:none}
 .hero .hero-title{font-size:clamp(2.3rem,5vw,3.7rem);line-height:1.1;margin:0 0 .55em;letter-spacing:-.025em;text-wrap:balance;font-weight:800;color:var(--ink)}
 .hero .hero-title em{font-style:normal;color:var(--red)}
+
+/* Popular services links: hub groups + home chips (23 Nov 2026) */
+.subgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.subgrp{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px 26px}
+.subgrp-h{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.subgrp-h .tico{width:44px;height:44px;border-radius:14px;margin:0}
+.subgrp-h .tico .ic{width:22px;height:22px}
+.subgrp h3{margin:0;font-size:1.05rem}
+.sublinks{list-style:none;padding:0;margin:0}
+.sublinks li{border-top:1px solid var(--line)}
+.sublinks li:first-child{border:0}
+.sublinks a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;color:var(--grey);font-weight:600}
+.sublinks a:hover{color:var(--red)}
+.sublinks .ic{width:16px;height:16px;color:var(--red);flex:none;transition:transform .2s}
+.sublinks a:hover .ic{transform:translateX(4px)}
+[dir=rtl] .sublinks a:hover .ic{transform:translateX(-4px)}
+.block.tight.popsvc{padding-top:0}
+.popgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 24px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px 26px}
+.poplbl{font-size:.82rem;font-weight:700;color:var(--mute);margin:0 0 8px}
+.popchips{display:flex;flex-wrap:wrap;gap:8px}
+.popchip{text-decoration:none;font-weight:600;transition:.2s}
+.popchip:hover{border-color:var(--red);color:var(--red);background:#fff}
+@media (max-width:1000px){.subgrid,.popgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.block.tight:has(+ .popsvc){padding-bottom:clamp(28px,3vw,40px)}
+.popsvc .head{margin-bottom:18px}
+.popsvc h2{font-size:clamp(1.35rem,2.2vw,1.75rem)}
+@media (max-width:600px){
+  .subgrid{grid-template-columns:minmax(0,1fr)}
+  .subgrp{padding:20px}
+  .popgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px}
+  .popgrp,.popchips{display:contents}
+  .poplbl{display:none}
+  .popchip{justify-content:center;text-align:center;border-radius:12px;font-size:.8rem;line-height:1.3;padding:8px 8px;min-height:44px}
+}
